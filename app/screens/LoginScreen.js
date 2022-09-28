@@ -2,10 +2,8 @@ import React from "react";
 import { StyleSheet, Image } from "react-native";
 import * as Yup from "yup";
 
-import AppFormField from "../components/forms/AppFormField";
-import SubmitButton from "../components/SubmitButton";
-import Screen from "../components/Screen";
-import AppForm from "../components/forms/AppForm"
+import Screen from "../components/Screen.js";
+import { AppForm, AppFormField, SubmitButton } from "../components/forms";
 
 const validationSchema = Yup.object().shape({
   email: Yup.string().required().email().label("Email"),
@@ -23,24 +21,24 @@ function LoginScreen(props) {
         vaildationSchema={validationSchema}
       >
         <AppFormField
-              placeholder="email"
-              icon="email"
-              autoCapitalize="none"
-              autoCorrect={false}
-              keyboardType="email-address"
-              name="email"
-              textContentType="emailAddress"
-            />
-            <AppFormField
-              autoCapitalize="none"
-              autoCorrect={false}
-              icon="lock"
-              placeholder="password"
-              name="password"
-              textContectType="password"
-              secureTextEntry
-            />
-            <SubmitButton title= "Login"/>
+          placeholder="email"
+          icon="email"
+          autoCapitalize="none"
+          autoCorrect={false}
+          keyboardType="email-address"
+          name="email"
+          textContentType="emailAddress"
+        />
+        <AppFormField
+          autoCapitalize="none"
+          autoCorrect={false}
+          icon="lock"
+          placeholder="password"
+          name="password"
+          textContectType="password"
+          secureTextEntry
+        />
+        <SubmitButton title="Login" />
       </AppForm>
     </Screen>
   );
