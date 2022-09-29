@@ -6,7 +6,7 @@ function SubmitButton({title}) {
 const {handleSubmit} = useFormikContext()
 
     return (
-        <Button title="Login" onPress={handleSubmit}/>
+        <Button title={title} onPress={handleSubmit}/>
     );
 }
 
