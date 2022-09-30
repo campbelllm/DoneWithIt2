@@ -1,5 +1,5 @@
 import React from "react";
-import {Formik} from "formik";
+import { Formik } from "formik";
 
 function AppForm({ initialValues, onSubmit, validationSchema, children }) {
   return (
@@ -8,12 +8,7 @@ function AppForm({ initialValues, onSubmit, validationSchema, children }) {
       onSubmit={onSubmit}
       vaildationSchema={validationSchema}
     >
-      {() => (
-      <>
-        {children}
-      </>
-      
-      )}
+      {() => <>{children}</>}
     </Formik>
   );
 }

@@ -26,9 +26,10 @@ import AppPicker from  "./app/components/AppPicker"
 import LoginScreen from "./app/screens/LoginScreen"
 import AppText from "./app/components/AppText.js"
 import RegisterScreen from "./app/screens/RegisterScreen"
+import ListingEditScreen from "./app/screens/ListingEditScreen";
 
 export default function App() {
   return (
-  <RegisterScreen/>
+  <ListingEditScreen/>
   );
 }
