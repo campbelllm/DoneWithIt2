@@ -81,6 +81,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   text: {
+    color: defaultStyles.colors.medium,
     flex: 1,
   },
 });
