@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
     marginBottom: 7,
   },
   subTitle: {
-    color: colors.secondary,
+    color: "black",
     fontWeight: "bold",
   },
 });

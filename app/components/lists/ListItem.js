@@ -3,6 +3,7 @@ import { StyleSheet, View, Image, TouchableHighlight } from "react-native";
 import Swipeable from "react-native-gesture-handler/Swipeable";
 import colors from "../../config/colors";
 import AppText from "../AppText";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 function ListItem({
   image,
@@ -25,6 +26,11 @@ function ListItem({
                 <AppText style={styles.subTitle}>{subTitle}</AppText>
               )}
             </View>
+            <MaterialCommunityIcons
+              name="chevron-right"
+              size={25}
+              color={colors.medium}
+            ></MaterialCommunityIcons>
           </View>
         </View>
       </TouchableHighlight>
@@ -34,11 +40,13 @@ function ListItem({
 
 const styles = StyleSheet.create({
   contact: {
+    alignItems: "center",
     flexDirection: "row",
     padding: 15,
     backgroundColor: colors.white,
   },
   contactText: {
+    flex: 1,
     margin: 10,
     justifyContent: "center",
   },
