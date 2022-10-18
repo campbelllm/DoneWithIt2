@@ -10,7 +10,7 @@ const initialMessages = [
   {
     id: 1,
     title: "T1",
-    description: "D1",
+    description: "hello this is lindsey smith. I am coding and typing something very very long to test out my number of lines prop is working. Lets see how it does.",
     image: require("../assets/mosh.jpg"),
   },
   {

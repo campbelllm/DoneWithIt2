@@ -55,11 +55,13 @@ const styles = StyleSheet.create({
     marginBottom: 3,
     justifyContent: "left",
     fontSize: 16,
+    color: colors.dark,
   },
   subTitle: {
     justifyContent: "left",
     color: colors.medium,
     fontSize: 16,
+    color: colors.dark,
   },
   image: {
     width: 80,
